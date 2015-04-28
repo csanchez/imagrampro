@@ -1,0 +1,27 @@
+@(imasecs: List[models.ImaSec])
+@main("Welcome to Play"){
+  <div id="index">
+    <div id="content">
+        <div id="table">
+          <div id="table_header">
+            <div class="header_item">id</div>
+            <div class="header_item">Tienda</div>
+            <div class="header_item">Mueble</div>
+            <div class="header_item">Sección</div>
+            <div class="header_item">Auditor</div>
+            <div class="header_item">Fecha</div>
+            <div class="header_item">Hora</div>
+            <div class="header_item">Foto</div>
+          </div>
+          <div id="table_body">
+            @for(ima <- imasecs) {
+            @imasec(ima)
+            }
+          </div>
+
+        <div>
+      </div>
+    </div>
+  </div>
+
+}

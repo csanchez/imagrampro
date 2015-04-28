@@ -1,0 +1,36 @@
+@(f: Form[models.forms.ImaSecForm])
+
+@helper.form(action = routes.ImaSec.save(), 'enctype -> "multipart/form-data") {
+
+    @helper.inputText(f("id_tienda"))
+    @helper.inputText(f("id_mueble"))
+    @helper.inputText(f("id_seccion"))
+    @helper.inputText(f("id_auditor"))
+    <input type="file" name="picture">
+    <input type="submit">
+}
+
+
+
+<!--
+<form action="@routes.ImaSec.save"  method='post' enctype='multipart/form-data'>
+    <dl>
+        <di><label>Id de tienda</label></di>
+        <di>
+
+            <input type="text" name="id_tienda"  id="id_tienda"  >
+        </di>
+    </dl>
+
+    <input type="text" name="id_mueble"  id="id_mueble"  >
+    <input type="text" name="id_seccion" id="id_seccion" >
+    <input type="text" name="id_auditor" id="id_auditor" >
+    <input type="file" name="picture">
+
+    <p>
+        <input type="submit">
+    </p>
+
+</form>
+
+-->

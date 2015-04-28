@@ -1,0 +1,50 @@
+#header{
+    background-color: red;
+}
+#content{}
+
+#index #content{
+
+}
+
+#index #content #table{
+    border: 1px solid silver;
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#index #content #table #table_header{
+     border: 1px solid black;
+     width: 100%;
+}
+#index #content #table .header_item{
+     display:inline-block;
+     width: 12%;
+}
+
+
+#index #content #table #table_body .table_body_element{
+     border: 1px solid black;
+     width: 100%;
+}
+#index #content #table #table_body .table_body_element .table_body_item{
+     display:inline-block;
+     width: 12%;
+}
+
+
+#show #content #image{
+    border: 1px solid silver;
+    width:  15%;
+    height: 15%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#footer{
+    background-color: green;
+}
+

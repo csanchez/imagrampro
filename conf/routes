@@ -1,0 +1,17 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET     /                     controllers.Application.index()
+GET     /foto                 controllers.Application.foto()
+
+POST    /save                     controllers.ImaSec.save()
+GET    /imasec/index              controllers.ImaSec.index()
+GET    /imasec/show/:id           controllers.ImaSec.show(id: Long)
+
+
+GET    /pmonp/precpro/:id         controllers.Pmonp.precpro(id: Long)
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.at(path="/public", file)

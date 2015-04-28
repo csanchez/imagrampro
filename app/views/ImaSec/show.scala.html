@@ -1,0 +1,14 @@
+@(imasec: models.ImaSec)
+@main("Welcome to Play"){
+<div id="show">
+    <div id="content">
+        <div id="image">
+            <img src='@(routes.Assets.at("images/"+imasec.picture))' width="100%" height="100%" />
+            @helper.form(action = routes.Pmonp.precpro(imasec.id)) {
+
+            <input type="submit" value="Procesar imagen">
+            }
+        </div>
+    </div>
+</div>
+}
