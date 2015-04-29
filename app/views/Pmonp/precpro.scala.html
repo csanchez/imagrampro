@@ -1,0 +1,21 @@
+@(imasec: models.ImaSec, product: String, realogram_proc: String)
+
+@main("Welcome to Play"){
+<div id="precpro">
+    <div id="content">
+        <div id="image">
+            <img src='@(routes.Assets.at("images/"+imasec.picture))' width="15%" height="15%" />
+
+        </div>
+        <div id="image">
+            <img src='@(routes.Assets.at("images/"+product))' width="15%" height="15%" />
+
+        </div>
+
+        <div id="image">
+            <img src='@(routes.Assets.at("images/"+realogram_proc))' width="15%" height="15%" />
+
+        </div>
+    </div>
+</div>
+}
